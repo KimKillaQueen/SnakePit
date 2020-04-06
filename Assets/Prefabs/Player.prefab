@@ -265,7 +265,7 @@ MonoBehaviour:
   platforms:
     serializedVersion: 2
     m_Bits: 256
-  hopSpeed: 48
+  hopSpeed: 5
 --- !u!114 &4891729456472086533
 MonoBehaviour:
   m_ObjectHideFlags: 0

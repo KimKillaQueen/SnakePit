@@ -58,14 +58,14 @@ public class HopScript : MonoBehaviour
         Debug.Log("Hopping");
 
         // playerRB.velocity = Vector2.right * playerRB.velocity.x + Vector2.up * 0.1f;
-        while (!falling)
+        while (!falling && !grounded)
         {
             jumpTimer += Time.deltaTime;
             if (jumpTimer < maxJumpTime)
             {
                 
                 //  playerRB.AddForce(Vector2.up / jumpTimer);
-                playerRB.velocity = playerRB.velocity.x * Vector2.right + (Vector2.up * hopSpeed * Time.deltaTime) / jumpTimer;
+                playerRB.velocity = playerRB.velocity.x * Vector2.right + (Vector2.up * hopSpeed) / jumpTimer;
                 
             } else {
                 falling = true;
