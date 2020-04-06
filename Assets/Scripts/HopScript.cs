@@ -58,6 +58,7 @@ public class HopScript : MonoBehaviour
         Debug.Log("Hopping");
 
         // playerRB.velocity = Vector2.right * playerRB.velocity.x + Vector2.up * 0.1f;
+        GetComponent<AudioSource>().Play();
         while (!falling && !grounded)
         {
             jumpTimer += Time.deltaTime;
